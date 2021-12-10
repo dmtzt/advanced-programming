@@ -1,0 +1,4 @@
+copia([], []).
+
+copia([H|T], [H|B]):-
+    copia(T, B).

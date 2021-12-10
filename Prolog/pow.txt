@@ -1,0 +1,8 @@
+pow(_, 0, 1).
+
+pow(N, X, R) :-
+    X > 0,
+    N > 0,
+    X_1 is X - 1,
+    pow(N, X_1, R_1),
+    R is N * R_1.

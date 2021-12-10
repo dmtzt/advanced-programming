@@ -1,0 +1,14 @@
+pow(0, 0, _) :- fail.
+
+pow(N, 0, 1) :-
+    N > 0.
+
+pow(0, X, 0) :-
+    X > 0.
+
+pow(N, X, R) :-
+    X > 0,
+    N \= 0,
+    X_1 is  X - 1,
+    pow(N, X_1, R_1),
+    R is N * R_1.

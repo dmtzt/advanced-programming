@@ -1,0 +1,7 @@
+head([], _) :-
+    fail.
+
+head([H1, H2], H).
+
+head([H|T], H).
+
